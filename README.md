@@ -13,14 +13,14 @@ Max Heap L과 Min Heap R을 만들고, L에 있는 모든 숫자는 R에 있는 
 새로운 item을 value
 현재 heap을 구성하고 있는 원소의 개수가 짝수인 경우 Even, 홀수인 경우 Odd
 heap L의 root인 L_Max, heap R의 root인 R_Min
- Condition			  |Even					|Odd
- :-------------------:|:-------------------:|:-------------------:
- L_Max = value = R_Min|input value in heap L|input value in heap R
- L_Max = value < R_Min|input value in heap L|input value in heap R
- L_Max < value = R_Min|input value in heap L|input value in heap R
- L_Max < value < R_Min|input value in heap L|input value in heap R
- value < L_Max		  |input value in heap L|move L_Max to heap R, input value in heap L
- R_Min < value		  |move R_Min to heap L, input value in heap R|input value in heap R
+ Condition			   | Even				   | Odd
+ :-------------------: | :-------------------: | :-------------------:
+ L_Max = value = R_Min | input value in heap L | input value in heap R
+ L_Max = value < R_Min | input value in heap L | input value in heap R
+ L_Max < value = R_Min | input value in heap L | input value in heap R
+ L_Max < value < R_Min | input value in heap L | input value in heap R
+ value < L_Max		   | input value in heap L | move L_Max to heap R, input value in heap L
+ R_Min < value		   | move R_Min to heap L, input value in heap R | input value in heap R
  
 - Even일 때 1~5는 value를 L의 맨 마지막 원소 다음에 넣고, Reheap_Up_Max(L, (*numL))를 통해 다시 heap L의 root가 Max인 heap이 되도록 한다.
 - Even일 때 6은 R_Min을 L의 맨 마지막 원소 다음에 넣고, value를 R의 root에 넣는다. Reheap_Up_Max(L, (*numL))를 통해 다시 heap L의 root가 Max인 heap이 되도록 하고, Reheap_Down_Min(R, 0, (*numR))를 통해 다시 heap R의 root가 Min인 heap이 되도록 한다.
