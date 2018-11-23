@@ -14,7 +14,7 @@ Max Heap L과 Min Heap R을 만들고, L에 있는 모든 숫자는 R에 있는 
 현재 heap을 구성하고 있는 원소의 개수가 짝수인 경우 Even, 홀수인 경우 Odd
 heap L의 root인 L_Max, heap R의 root인 R_Min
  Condition			   | Even				   | Odd
- :-------------------: | :-------------------: | :-------------------:
+ --------------------- | --------------------- | ---------------------
  L_Max = value = R_Min | input value in heap L | input value in heap R
  L_Max = value < R_Min | input value in heap L | input value in heap R
  L_Max < value = R_Min | input value in heap L | input value in heap R
